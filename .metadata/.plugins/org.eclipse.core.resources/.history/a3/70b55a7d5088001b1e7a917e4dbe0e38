@@ -1,0 +1,27 @@
+package array;
+
+import java.util.Arrays;
+
+public class Array_1 {
+	
+	public static void main(String[] args) {
+		
+	int[] arr = {1,2,3,4,5};	// 값 넣어주면서 초기화
+	int[] arr2 = arr;
+	
+	System.out.println(arr2[1]);
+	System.out.println(arr);
+	System.out.println(arr2);	// 주소값이 같음
+	System.out.println();
+	
+	int[] arrr = new int[5];	// 값 없이 초기화
+	arrr[0] = 77;
+	int[] arrr2 = arrr;
+	
+	System.out.println(arrr2[0]);
+	System.out.println(arrr);
+	System.out.println(arrr2);
+	System.out.println(Arrays.toString(arrr));
+	
+	}
+}

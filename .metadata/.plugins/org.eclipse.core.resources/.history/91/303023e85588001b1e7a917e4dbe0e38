@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class A {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[] grades = new int[5];
+		int sum = 0;
+		
+		for(int i=0; i<5; i++) {
+			System.out.print(i + "ÀÇ ¼ºÀû: ");
+			int grade = sc.nextInt();
+			grades[i] = grade;
+			sum += grade;
+		}
+		
+		double avg = sum/grades.length;
+		System.out.println("ÃÑÇÕ: " + sum + "\nÆò±Õ: " + avg);
+
+	}
+}

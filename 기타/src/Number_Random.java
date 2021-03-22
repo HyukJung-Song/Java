@@ -1,0 +1,32 @@
+
+
+import java.util.Random;
+
+public class Number_Random {
+	
+	public static void main(String[] args) {
+		
+		
+	Random rd = new Random();
+	int rdNum = rd.nextInt();
+	rdNum %= 100; 	// 0~99 = rd.nextInt(100)
+	
+	System.out.println("·£´ý¼ýÀÚ : " + rdNum);
+	
+	if (rdNum % 2 == 0 && rdNum > 0) {
+		System.out.println("Â¦¼ö");
+	} else if (rdNum > 0) {
+		System.out.println("È¦¼ö");
+	} else if (rdNum < 0) {
+		System.out.println("À½¼ö");
+	} else {
+		System.out.println("0");
+	}
+	
+	
+	
+	
+	
+	
+	}
+}
