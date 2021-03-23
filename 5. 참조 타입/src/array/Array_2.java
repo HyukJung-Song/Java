@@ -7,7 +7,7 @@ public class Array_2 {
 
 	public static void main(String[] args) {
 		
-		// ¹è¿­ÀÇ foreach¹® È°¿ë
+		// ë°°ì—´ì˜ foreachë¬¸ í™œìš©
 		int[] arr = {11,22,33,44, 7};
 		System.out.println(Arrays.toString(arr));
 		for(int value : arr) {
@@ -16,7 +16,7 @@ public class Array_2 {
 		System.out.println("\n");
 		
 		
-		// ¿À¸§Â÷¼ø Á¤·Ä
+		// ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
 		int[] ar = {1,3,2,4};	
 		double[] ar2 = {1.1, 3.3, 2.2, 4.4};
 		char[] ar3 = {'a', 'c', 'b', 'd'};
@@ -25,8 +25,8 @@ public class Array_2 {
 		Arrays.sort(ar4);
 		
 		
-		// ³»¸²Â÷¼ø Á¤·Ä 
-		Integer[] array = {1,3,2,4};	// ±âº»Å¸ÀÔ -> Wrapper Å¬·¡½º
+		// ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬ 
+		Integer[] array = {1,3,2,4};	// ê¸°ë³¸íƒ€ì… -> Wrapper í´ë˜ìŠ¤
 		Character[] array2 = {'a', 'c', 'b', 'd'};
 		String[] array3 = {"aa", "cc", "bb", "dd"};
 		Arrays.sort(array3, Collections.reverseOrder());
