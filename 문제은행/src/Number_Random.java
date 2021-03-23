@@ -11,14 +11,14 @@ public class Number_Random {
 	int rdNum = rd.nextInt();
 	rdNum %= 100; 	// 0~99 = rd.nextInt(100)
 	
-	System.out.println("·£´ý¼ýÀÚ : " + rdNum);
+	System.out.println("ëžœë¤ìˆ«ìž : " + rdNum);
 	
 	if (rdNum % 2 == 0 && rdNum > 0) {
-		System.out.println("Â¦¼ö");
+		System.out.println("ì§ìˆ˜");
 	} else if (rdNum > 0) {
-		System.out.println("È¦¼ö");
+		System.out.println("í™€ìˆ˜");
 	} else if (rdNum < 0) {
-		System.out.println("À½¼ö");
+		System.out.println("ìŒìˆ˜");
 	} else {
 		System.out.println("0");
 	}

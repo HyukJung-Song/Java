@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class B {
 	public static void main(String[] args) {
-
+ 
 		int[] arr = {5,4,3,1,2,55,22,11,100,200,0};
 		int tmp;
 		

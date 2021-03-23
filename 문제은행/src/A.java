@@ -11,35 +11,35 @@ public class A {
 		for(int i=0; i<arr.length; i++) {
 			Random r = new Random();
 			int num = r.nextInt(101);
-			arr[i] = num;					// 30»çÀÌÁîÀÇ ¹è¿­¿¡ ·£´ý¼ýÀÚ ³ÖÀ½
+			arr[i] = num;					// 30ì‚¬ì´ì¦ˆì˜ ë°°ì—´ì— ëžœë¤ìˆ«ìž ë„£ìŒ
 		}
 		
-		// ¹öºíÁ¤·Ä
-		System.out.println(Arrays.toString(arr)); 	// Á¤·Ä Àü
+		// ë²„ë¸”ì •ë ¬
+		System.out.println(Arrays.toString(arr)); 	// ì •ë ¬ ì „
 		int temp;
-		for(int i=0; i<arr.length-1; i++) {			// ¿ÞÂÊºÎÅÍ 2°³¾¿ °ª ºñ±³ÇÏ¿© Å©¸é ¿À¸¥ÂÊÀ¸·Î ÀÌµ¿
-			for(int j=0; j<arr.length-1-i; j++) {	// Á¦ÀÏ ¿À¸¥ÂÊºÎÅÍ °¡Àå Å« ¼ö°¡ È®Á¤µÇ¾î ¹Ýº¹À» -i¹øÇÔ
+		for(int i=0; i<arr.length-1; i++) {			// ì™¼ìª½ë¶€í„° 2ê°œì”© ê°’ ë¹„êµí•˜ì—¬ í¬ë©´ ì˜¤ë¥¸ìª½ìœ¼ë¡œ ì´ë™
+			for(int j=0; j<arr.length-1-i; j++) {	// ì œì¼ ì˜¤ë¥¸ìª½ë¶€í„° ê°€ìž¥ í° ìˆ˜ê°€ í™•ì •ë˜ì–´ ë°˜ë³µì„ ië²ˆí•¨
 				if (arr[j] > arr[j+1]) {			
 					temp = arr[j];
 					arr[j] = arr[j+1];
 					arr[j+1] = temp;
 				}
 			}
-		}											// ¿À¸§Â÷¼ø Á¤·Ä¿Ï·á. (<´Â ³»¸²Â÷¼ø µÊ)
+		}											// ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬ì™„ë£Œ. (<ëŠ” ë‚´ë¦¼ì°¨ìˆœ)
 		
-		System.out.println(Arrays.toString(arr));	// Á¤·Ä ÈÄ
+		System.out.println(Arrays.toString(arr));	// ì •ë ¬ í›„
 	}
 }
 
 
-//// ¿À¸§Â÷¼ø(sort)
-//System.out.println(Arrays.toString(arr));	// Á¤·Ä Àü
-//Arrays.sort(arr);	// ¿À¸§Â÷¼øÀ¸·Î Á¤·ÄÇÔ
-//System.out.println(Arrays.toString(arr));	// Á¤·Ä ÈÄ
+//// ì˜¤ë¦„ì°¨ìˆœ(sort)
+//System.out.println(Arrays.toString(arr));	// ì •ë ¬ ì „
+//Arrays.sort(arr);	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//System.out.println(Arrays.toString(arr));	// ì •ë ¬ í›„
 //System.out.println();
 //
 
 
-//// ³»¸²Â÷¼ø(Collection Å¬·¡½º »ç¿ë)
-//System.out.println(Arrays.toString(arr));	// Á¤·Ä Àü(¿À¸§Â÷¼ø µÇ¾îÀÖÀ½)
+//// ë‚´ë¦¼ì°¨ìˆœ(Collection í´ëž˜ìŠ¤ ì‚¬ìš©)
+//System.out.println(Arrays.toString(arr));	// ì •ë ¬ ì „(ì˜¤ë¦„ì°¨ìˆœ ë˜ì–´ìžˆìŒ)
 //Arrays.sort(arr, Collections.reverseOrder());

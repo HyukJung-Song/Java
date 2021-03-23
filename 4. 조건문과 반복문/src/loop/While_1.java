@@ -4,7 +4,7 @@ public class While_1 {
 
 	public static void main(String[] args) {
 
-		// ±âº»ÇüÅÂ
+		// ê¸°ë³¸í˜•íƒœ
 		int i = 0;
 		while (i < 9) {
 			System.out.println(2 + " X " + (i+1) + " = " + 2*(i+1));

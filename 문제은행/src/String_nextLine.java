@@ -7,22 +7,22 @@ public class String_nextLine {
 		
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("È­¸é¿¡ ÁÖ»çÀ§¸¦ ±¼¸±±î¿ä? [Enter]");
-		sc.nextLine();		// ÀÔ·ÂµÈ °ªÀ» ¹®ÀÚ·Î ¸¸µé¾îÁÜ(±×³É EnterÅ°µµ ¸ÔÀ½) 
+		System.out.print("í™”ë©´ì— ì£¼ì‚¬ìœ„ë¥¼ êµ´ë¦´ê¹Œìš”? [Enter]");
+		sc.nextLine();		// ìž…ë ¥ëœ ê°’ì„ ë¬¸ìžë¡œ ë§Œë“¤ì–´ì¤Œ(ê·¸ëƒ¥ Enterí‚¤ë„ ë¨¹ìŒ!!)
 		
 		Random rd = new Random();
 		int userNum = rd.nextInt(6) + 1;
-		System.out.println("³»°¡ »ÌÀº ¹øÈ£ : " + userNum + "\n");
+		System.out.println("ë‚´ê°€ ë½‘ì€ ë²ˆí˜¸ : " + userNum + "\n");
 		
-		System.out.print("ÄÄÇ»ÅÍ°¡ ÁÖ»çÀ§¸¦ ±¼¸³´Ï´Ù. ½ÇÇàÇÒ±î¿ä? [Enter]");
+		System.out.print("ì»´í“¨í„°ê°€ ì£¼ì‚¬ìœ„ë¥¼ êµ´ë¦½ë‹ˆë‹¤. ì‹¤í–‰í• ê¹Œìš”? [Enter]");
 		sc.nextLine();
 		int comNum = rd.nextInt(6) + 1;
-		System.out.println("ÄÄÇ»ÅÍ°¡ »ÌÀº ¹øÈ£ : " + comNum + "\n");
+		System.out.println("ì»´í“¨í„°ê°€ ë½‘ì€ ë²ˆí˜¸: " + comNum + "\n");
 		
 		if (userNum > comNum) {
 			System.out.println("You Win!!");
 		} else if (userNum < comNum) {
-			System.out.println("You Lose¤Ð¤Ð");
+			System.out.println("You Loseã… ã… ");
 		} else {
 			System.out.println("Draw ~");
 		}

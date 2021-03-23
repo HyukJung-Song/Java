@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Sum_44 {
 	public static void main(String[] args) {
-		Random r = new Random();
+		Random r = new Random(); 
 		
 		int[][] arr = new int[4][4];
 //		System.out.println("a");

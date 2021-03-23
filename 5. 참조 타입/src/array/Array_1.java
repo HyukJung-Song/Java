@@ -6,7 +6,7 @@ public class Array_1 {
 	
 	public static void main(String[] args) {
 		
-	// ´Ù¾çÇÑ ¹è¿­ÀÇ ¸ğ½À
+	// ë‹¤ì–‘í•œ ë°°ì—´ì˜ ëª¨ìŠµ
 	int[] ar = {1,2,3};
 	char[] ar2 = {'a', 'b', 'c'};
 	String[] ar3 = {"aa", "bb", "cc"};
@@ -14,21 +14,21 @@ public class Array_1 {
 	Double[] ar5 = {1.1, 2.1, 3.1};
 	
 	
-	// ¹è¿­ ÃÊ±âÈ­
-	int[] arr = {1,2,3,4,5};	// °ª ³Ö¾îÁÖ¸é¼­ ÃÊ±âÈ­, (x)[1,2,3,4,5])
-	int[] arr2 = new int[5];	// °ª ¾øÀÌ ÃÊ±âÈ­
+	// ë°°ì—´ ì´ˆê¸°í™”
+	int[] arr = {1,2,3,4,5};	// ê°’ ë„£ì–´ì£¼ë©´ì„œ ì´ˆê¸°í™”, (x)[1,2,3,4,5])
+	int[] arr2 = new int[5];	// ê°’ ì—†ì´ ì´ˆê¸°í™”
 	
 	
-	// ¹è¿­ ³»¿ë ¹× ±æÀÌ
-	System.out.println(Arrays.toString(arr));	// ¹è¿­ ³»¿ëÈ®ÀÎ
-	System.out.println(arr.length);	// ¹è¿­ ±æÀÌÈ®ÀÎ
+	// ë°°ì—´ ë‚´ìš© ë° ê¸¸ì´
+	System.out.println(Arrays.toString(arr));	// ë°°ì—´ ë‚´ìš©í™•ì¸
+	System.out.println(arr.length);	// ë°°ì—´ ê¸¸ì´í™•ì¸
 	System.out.println();
 	
 
 	
-	// ·¹ÆÛ·±½º(ÁÖ¼Ò°ª) º¹»ç	(°ª ¾øÀÌ new·Î ÃÊ±âÈ­ÇØµµ °á°ú °°À½)
-	// ¿Ø¸¸ÇÏ¸é ¾²Áö ¸»°Í
-	int[] array = {1,2,3,4,5};	// ±âº»Å¸ÀÔ
+	// ë ˆí¼ëŸ°ìŠ¤(ì£¼ì†Œê°’) ë³µì‚¬ (ê°’ ì—†ì´ newë¡œ ì´ˆê¸°í™”í•´ë„ ê²°ê³¼ ê°™ìŒ)
+	// ì™ ë§Œí•˜ë©´ ì“°ì§€ ë§ê²ƒ
+	int[] array = {1,2,3,4,5};	// ê¸°ë³¸íƒ€ì…
 	int[] array2 = array;			
 	array2[4] = 555;
 	System.out.println(array[4]);	// 555
@@ -43,10 +43,10 @@ public class Array_1 {
 	System.out.println();
 	
 	
-	// ÁÖ¼Ò°ªÀÌ ¾Æ´Ñ ½ÇÁ¦ °ª º¹»ç
+	// ì£¼ì†Œê°’ì´ ì•„ë‹Œ ì‹¤ì œê°’ ë³µì‚¬
 	int[] array3 = {1,2,3,4,5};
 	int[] temp3 = new int[array3.length];
-	System.arraycopy(array3, 0, temp3, 0, array3.length); // ÀüÃ¼º¹»ç
+	System.arraycopy(array3, 0, temp3, 0, array3.length); // ì „ì²´ë³µì‚¬
 	System.out.println(Arrays.toString(array3));  // [1,2,3,4,5]
 	System.out.println(Arrays.toString(temp3));    // [1,2,3,4,5]
 	System.out.println(array3);		// [I@71dac704

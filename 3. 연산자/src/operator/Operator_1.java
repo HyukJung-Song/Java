@@ -4,7 +4,7 @@ public class Operator_1 {
 
 	public static void main(String[] args) {
 		
-		// Αυ°¨Ώ¬»κΐΪ
+		// μ¦κ°μ—°μ‚°μ
 		int a = 1;
 		int b = a++;
 		int c = a;

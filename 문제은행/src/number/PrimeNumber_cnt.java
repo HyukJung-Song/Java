@@ -5,7 +5,7 @@ public class PrimeNumber_cnt {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("숫자 입력: ");
+		System.out.print("number: ");
 		int num = sc.nextInt();
 
 		int cnt = 0;
@@ -16,9 +16,9 @@ public class PrimeNumber_cnt {
 		}
 		
 		if (cnt == 2) {
-			System.out.println(num + "은 소수입니다.");
+			System.out.println(num + "is a PrimNumber");
 		} else {
-			System.out.println(num + "은 소수가 아닙니다.");
+			System.out.println(num + "isn't a PrimeNumber");
 		}
 		
 

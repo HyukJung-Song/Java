@@ -6,7 +6,7 @@ public class PrimeNumber_100 {
 		
 		for (int i = 0; i < 101; i++) {
 			boolean isPrime = true;
-			
+			 
 			if (i < 2) {
 				continue;
 			} else {

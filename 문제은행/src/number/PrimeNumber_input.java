@@ -7,14 +7,14 @@ public class PrimeNumber_input {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("*** ¼Ò¼ö ÆÇº°±â ***");
+		System.out.println("*** ì†Œìˆ˜ íŒë³„ê¸° ***");
 
-		System.out.print("¼ıÀÚ ÀÔ·Â : ");
+		System.out.print("ìˆ«ì ì…ë ¥ : ");
 		int num = sc.nextInt();
 		boolean isPrime = true;
 		
 		if (num < 2) {
-			System.out.println("¼Ò¼ö°¡ ¾Æ´Õ´Ï´Ù.");
+			System.out.println("ì†Œìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
 		} else {
 			for (int i = 2; i < num; i++) {
 				if (num % i == 0) {
@@ -23,9 +23,9 @@ public class PrimeNumber_input {
 				} 
 			}
 			if (isPrime) {
-				System.out.println(num + "Àº(´Â) ¼Ò¼öÀÔ´Ï´Ù.");
+				System.out.println(num + "ì€(ëŠ”) ì†Œìˆ˜ì…ë‹ˆë‹¤.");
 			} else {
-				System.out.println(num + "Àº(´Â) ¼Ò¼ö°¡ ¾Æ´Õ´Ï´Ù.");
+				System.out.println(num + "ì€(ëŠ”) ì†Œìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
 			}
 		}
 		

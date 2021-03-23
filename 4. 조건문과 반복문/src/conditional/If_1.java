@@ -4,7 +4,7 @@ public class If_1 {
 	
 	public static void main(String[] args) {
 		
-		// ±âº»
+		// ê¸°ë³¸
 		int grade = 70;
 		if (grade >= 90) {
 			System.out.println("A");
@@ -17,7 +17,7 @@ public class If_1 {
 		} else if (grade >= 50) {
 			System.out.println("E");
 		} else {
-			System.out.println("³ª°¡¸®");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}
 	
 	

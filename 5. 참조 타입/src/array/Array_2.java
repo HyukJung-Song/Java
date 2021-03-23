@@ -7,7 +7,7 @@ public class Array_2 {
 
 	public static void main(String[] args) {
 		
-		// 배열의 foreach문 활용
+		// 배열의 foreach문 활용 
 		int[] arr = {11,22,33,44, 7};
 		System.out.println(Arrays.toString(arr));
 		for(int value : arr) {

@@ -3,27 +3,27 @@ package loop;
 public class For_1 {
 	public static void main(String[] args) {
 
-		// ±âº» ÇüÅÂ
+		// ê¸°ë³¸ í˜•íƒœ
 		for (int i = 0; i < 5; i++) {
 			System.out.print("*");
 		}
 		System.out.println();
 
-		// Æ¯ÀÌÇÑ ÇüÅÂ
+		// íŠ¹ì´í•œ í˜•íƒœ
 		int z = 10;
 		for (System.out.println("AAAA"); z < 15; z++) {
 			System.out.println("BBBB");
 		}
 		System.out.println();
 
-		// ±¸±¸´Ü 2´Ü
+		// êµ¬êµ¬ë‹¨ 2ë‹¨
 		int n = 2;
 		for (int i = 1; i < 10; i++) {
 			System.out.println(n + " X " + i + " = " + n * i);
 		}
 		System.out.println();
 
-		// ±¸±¸´Ü 2~9´Ü
+		// êµ¬êµ¬ë‹¨ 2~9ë‹¨
 		for (int i = 2; i < 10; i++) {
 			for (int j = 0; j < 9; j++) {
 				System.out.println(i + " X " + (j + 1) + " = " + i * (j + 1));
@@ -35,7 +35,7 @@ public class For_1 {
 		for (int i = 0; i < 10; i++) {
 			int num = i + 1;
 			if (num % 2 == 0) {
-				continue; // Â¦¼ö´Â ³Ñ¾î°¨
+				continue; // ì§ìˆ˜ëŠ” ë„˜ì–´ê°
 			}
 			if (num == 7) {
 				break;
@@ -45,7 +45,7 @@ public class For_1 {
 		System.out.println();
 		
 		
-		// 1~100 ±îÁöÀÇ ÇÕ, È¦¼öÇÕ, Â¦¼öÇÕ (ifÇÑ¹ø¸¸, else x, else if x)
+		// 1~100 ê¹Œì§€ì˜ í•©, í™€ìˆ˜í•©, ì§ìˆ˜í•© (if í•œë²ˆë§Œ, else x, else if x)
 		int sumAll = 0;
 		int sumOdd = 0;
 		int sumEven = 0;
@@ -58,9 +58,9 @@ public class For_1 {
 			} 
 		}
 		sumEven = sumAll - sumOdd;
-		System.out.println("ÃÑÇÕ : " + sumAll);
-		System.out.println("È¦¼öÇÕ : " + sumOdd);
-		System.out.println("Â¦¼öÇÕ : " + sumEven);
+		System.out.println("ì´í•© : " + sumAll);
+		System.out.println("í™€ìˆ˜í•© : " + sumOdd);
+		System.out.println("ì§ìˆ˜í•© : " + sumEven);
 		
 		
 		
