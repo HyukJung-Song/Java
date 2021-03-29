@@ -31,10 +31,10 @@ public class Exchange_sort {
 		System.out.println("bubbleSort 결과: " + Arrays.toString(arr));
 	}
 	
-	private static void swap(int[] arr, int x, int y) {
-		int tmp = arr[x];
-		arr[x] = arr[y];
-		arr[y] = tmp;
+	private static void swap(int[] arr, int i, int j) {
+		int tmp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = tmp;
 	}
 	
 	

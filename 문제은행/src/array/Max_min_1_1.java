@@ -3,7 +3,7 @@ package array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Max_Min_1_1 {
+public class Max_min_1_1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

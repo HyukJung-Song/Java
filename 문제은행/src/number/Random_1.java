@@ -3,7 +3,7 @@ package number;
 
 import java.util.Random;
 
-public class Number_Random {
+public class Random_1 {
 	
 	public static void main(String[] args) {
 		
