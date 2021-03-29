@@ -2,7 +2,7 @@ package class_;
 
 import java.util.Scanner;
 
-public class ExecClass_SaveBox {
+public class SaveBox_Exec {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		
@@ -28,9 +28,7 @@ public class ExecClass_SaveBox {
 				myBox.deposit(coin);
 			// 2(입금 + 메시지)
 			} else if (userInputString.equals("2")) {
-				System.out.print("입금할 금액: ");
-				int coin = s.nextInt();
-				myBox.depositWithMsg(coin);
+				myBox.depositWithMsg();
 			// crash (종료)
 			} else if (userInputString.equals("crash")) {
 				myBox.end();

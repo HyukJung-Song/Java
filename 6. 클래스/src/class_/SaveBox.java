@@ -12,13 +12,18 @@ public class SaveBox {
 		coins = coins + coin;
 	}
 	
-	public void depositWithMsg(int coin) {
-		System.out.print("메시지: ");
+	public void depositWithMsg() {
+		System.out.print("금액, 메시지: ");
 		String message = s.nextLine();
+		String[] mArr = message.split(",");
 		
-		System.out.println(message);
-		System.out.println(coin + "원이 입급되었습니다!");
+		int coin = Integer.parseInt(mArr[0]);
 		coins = coins + coin;
+		message = mArr[1].trim();	// trim()은 공백제거
+		
+		System.out.println(coin + "원이 입급되었습니다! / " + 
+				"메시지: " + message);
+
 	}
 	
 	public void end() {
