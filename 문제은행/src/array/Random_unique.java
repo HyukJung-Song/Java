@@ -22,6 +22,7 @@ public class Random_unique {
 				}
 			}	
 		}
+		Arrays.sort(arr);
 		System.out.println(Arrays.toString(arr));
 		
 		
