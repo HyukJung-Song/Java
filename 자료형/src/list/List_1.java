@@ -7,15 +7,23 @@ public class List_1 {
 	public static void main(String[] args) {
 
 		ArrayList<Integer> list1 = new ArrayList<Integer>();
+		// 배열과 다르게 사이지를 처음부터 지정할 필요가 없군!!
+		// 이처럼 자료형의 갯수가 가변하는 상황에서는 List를 써야 한다.
 
 		// add
+		System.out.println(list1);	// []
 		list1.add(1);
 		list1.add(2);
-		list1.add(0, 3); // 한칸 밀치고 들어감. 1은 index 1로 바뀜
+		list1.add(0, 3);			// 한칸 밀치고 들어감. 1은 index 1로 바뀜
+		// list1.add("하하");		
+		System.out.println(list1);	// [3, 1, 2]			
 
 		
+		
 		// get, size
+		// System.out.println(list1[2]);
 		System.out.println(list1.get(0)); // 3
+		// System.out.println(list1.length());
 		System.out.println(list1.size()); // 3
 
 		for (int i = 0; i < list1.size(); i++) {
