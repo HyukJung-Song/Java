@@ -6,16 +6,21 @@ public class A {
 
 	public static void main(String[] args) {
 
-		factorial(5);
+
+		int result = plus(200);
+		System.out.println(result);
+		
 	}
 	
-	// 5! = 5 * 4 * 3 * 2 * 1
-	public static int factorial(int n) {
-		if (n <= 1) {
-			return 1;
+	// f(n) = n + f(n-1)
+	public static int plus(int n) {
+		System.out.println("n: " + n);
+		if (n <= 100) {
+			return n;
 		} else {
-			return n * factorial(n - 1);
+			return n + plus(n-1);
 		}
+		
 	}
 
 	
