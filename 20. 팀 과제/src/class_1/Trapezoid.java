@@ -1,12 +1,11 @@
 package class_1;
 import java.util.Scanner; //송혁중class
 
-public class Trapezoid {
+public class Trapezoid extends Base {
    
    int upperLine;
    int lowerLine;
    int height;
-   double area;
    
    
    public void inputData() {
