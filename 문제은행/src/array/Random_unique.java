@@ -17,8 +17,9 @@ public class Random_unique {
 			// 중복값 거르기
 			for (int j = 0; j < i; j++) {
 				if (arr[j] == arr[i]) {
-					arr[i] = rd.nextInt(30) + 1;
-					j = -1;
+					i = i -1;
+//					arr[i] = rd.nextInt(30) + 1;
+//					j = -1;
 				}
 			}	
 		}

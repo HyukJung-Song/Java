@@ -13,8 +13,8 @@ public class Insertion_sort {
 				if (arr[j-1] > arr[j]) {
 					swap(arr, j-1, j);
 				} else {
-					break;			// ** 최적화 **
-				}
+					break;	// ** 최적화 ** 
+				}			// (왼쪽이 작으면 더 왼쪽은 이미 정렬되어 있기에)
 				System.out.println("i: " + i + " j: " + j);
 				System.out.println(Arrays.toString(arr));
 			}
