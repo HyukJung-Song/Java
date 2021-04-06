@@ -44,6 +44,10 @@ public class Stu_ex {
 		System.out.println();
 		
 		
+		Student s = new Student();
+		System.out.println(s);
+		
+		
 		
 		
 	}

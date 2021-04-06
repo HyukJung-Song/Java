@@ -7,6 +7,7 @@ public class Student {
 	String name;
 	int midterm;
 	int finalterm;
+	
 	@Override
 	public String toString() {
 		return "학번: " + stuNum + ", 이름: " + name + 
