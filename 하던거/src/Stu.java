@@ -1,12 +1,12 @@
 
-public class Student1 {
+public class Stu {
 
 	String name;
 	int midScore;
 	int finalScore;
 	int totalScore;
 	
-	public Student1(String name, int midScore, int finalScore) {
+	public Stu(String name, int midScore, int finalScore) {
 		this.name = name;
 		this.midScore = midScore;
 		this.finalScore = finalScore;

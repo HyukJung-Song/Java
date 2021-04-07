@@ -1,4 +1,4 @@
-package next;
+package z_etc;
 
 public class X_tmp_Y {
 	

@@ -3,16 +3,16 @@ public class Student_Exec {
 
 	public static void main(String[] args) {
 		
-		Student1[] stu = {new Student1("김1",10,100),
-						 new Student1("김2",20,80),
-						 new Student1("김3",30,30),
-						 new Student1("김4",40,90),
-						 new Student1("김5",50,40),
-						 new Student1("김6",60,63),
-						 new Student1("김7",70,72),
-						 new Student1("김8",80,81),
-						 new Student1("김9",90,59),
-						 new Student1("김10",100,100),
+		Stu[] stu = {new Stu("김1",10,100),
+						 new Stu("김2",20,80),
+						 new Stu("김3",30,30),
+						 new Stu("김4",40,90),
+						 new Stu("김5",50,40),
+						 new Stu("김6",60,63),
+						 new Stu("김7",70,72),
+						 new Stu("김8",80,81),
+						 new Stu("김9",90,59),
+						 new Stu("김10",100,100),
 		};			
 		
 		// Q1. 총점/평균 출력
@@ -84,7 +84,7 @@ public class Student_Exec {
 		}
 	}
 	
-	public static void calc_sum_avg (Student1[] stu) {
+	public static void calc_sum_avg (Stu[] stu) {
 		
 		// 총점
 		int midSum = 0;
@@ -102,8 +102,8 @@ public class Student_Exec {
 		double totalAve = (double)totalSum / stu.length;
 	}
 	
-	static void swap(Student1[] arr, int i, int j) {
-		Student1 tmp = arr[i];
+	static void swap(Stu[] arr, int i, int j) {
+		Stu tmp = arr[i];
 		arr[i] = arr[j];
 		arr[j] = tmp;
 	}
