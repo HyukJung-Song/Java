@@ -1,32 +1,39 @@
 package class_1;
-import java.util.Scanner;    //이혜진class
+import java.util.Scanner; //이혜진class
 //수치 입력 inputData
 //넓이 계산 calcArea
-public class Rec {
 
-      int lowerline;
-      int height;
-      double calcarea;
-      
+public class Rec extends Base {
+
+   double lowerline;
+   double height;
+   double calcarea;
+
+   Rec(String name) {
+      super(name);
+
+   }
+
+   @Override
    public void inputData() {
-   
-   Scanner scanner = new Scanner(System.in);
+      // TODO Auto-generated method stub
+      super.inputData();
+      Scanner scanner = new Scanner(System.in);
 
-   System.out.println("밑변을 입력해주세요");
-   String inputString = scanner.nextLine();
-   lowerline = Integer.parseInt(inputString);
-   
-   System.out.println("높이를 입력해주세요");
-   inputString = scanner.nextLine();
-   height = Integer.parseInt(inputString);
-   
-     
-}
+      System.out.println("밑변을 입력해주세요");
+      String inputText = scanner.nextLine();
+      lowerline = Double.parseDouble(inputText);
 
+      System.out.println("높이를 입력해주세요");
+      inputText = scanner.nextLine();
+      height = Double.parseDouble(inputText);
+
+   }
+   
+   @Override
    public void calcArea() {
-      
-   calcarea = lowerline * height ;
-   
-    System.out.println("사각형 넓이는 " + calcarea + "입니다." );
- }
+      // TODO Auto-generated method stub
+      this.area = this.lowerline * this.height;
+   }
+    
 }

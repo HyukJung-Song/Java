@@ -1,29 +1,28 @@
 package class_1;
-import java.util.Scanner; //박영선class
+import java.util.Scanner; //박영선 class
 
-public class Para {
+public class Para extends Base {
+	double width = 0;
+	double height = 0;
 	
-	int width = 0;
-	int height = 0;
-	int area = 0;
+	Para(String name) {
+		super(name);
+	}
 	
-	//수치 입력 1.밑변 2.높이
+	@Override
 	public void inputData() {
-		Scanner scan = new Scanner(System.in);
-		System.out.print("평행사변형 밑변의 길이: ");
-		width = scan.nextInt();
-		System.out.print("평행사변형 높이: ");
-		height = scan.nextInt();
-		System.out.println("평행사변형 밑변:" + width +" "+ "높이:" + height);
+		super.inputData();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("밑변을 입력해주세요.");
+		String inputText = scanner.nextLine();
+		this.width = Double.parseDouble(inputText);
+		System.out.println("높이를 입력해주세요.");
+		inputText = scanner.nextLine();
+		this.height = Double.parseDouble(inputText);
 	}
 	
-	//넓이 계산 밑변x높이
-	
+	@Override
 	public void calcArea() {
-		area = width * height;
-		System.out.println("평행사변형의 넓이는: " + area);
+		this.area = this.width * this.height;
 	}
-	
 }
-
-

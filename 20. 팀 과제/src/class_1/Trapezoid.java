@@ -7,8 +7,12 @@ public class Trapezoid extends Base {
    int lowerLine;
    int height;
    
+   Trapezoid(String name) {
+		super(name); 
+	}
    
    public void inputData() {
+	   super.inputData();
       Scanner sc = new Scanner(System.in);
       System.out.print("윗변의 길이: ");
       upperLine = sc.nextInt();
@@ -21,7 +25,6 @@ public class Trapezoid extends Base {
    
    public void calcArea() {
       area = (upperLine + lowerLine) * height / 2.0;
-      System.out.println("사다리꼴의 넓이: " + area);
    }
    
 }

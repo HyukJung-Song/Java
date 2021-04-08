@@ -8,12 +8,15 @@ public class Stu_ex {
 		System.out.println("학생의 성적을 성적순으로 나열합니다."); 
 		System.out.print("나열할 학생의 수를 입력해주세요 : ");
 		int num = Integer.parseInt(sc.nextLine());
+		
 		// Student 리스트 생성 (null로 채워짐)
 		Student[] stuList = new Student[num];	// 이렇게만 만들면 null이 행렬에 3개 들어감
+		
 		// 리스트 내부에 객체 num개 생성 			 	// 그러면 값을 넣을 수가 없음(NullPointerException) 
 		for (int i=0; i<stuList.length; i++) {	// 그래서 new ()로 반복해서 생성해야함.
 			stuList[i] = new Student(); 
 		}
+		
 		// 출력 확인
 		for (int i=0; i<stuList.length; i++) {
 			System.out.println(stuList[i]);

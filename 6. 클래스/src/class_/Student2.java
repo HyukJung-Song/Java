@@ -1,13 +1,14 @@
+package class_;
 
 
-public class Student {
+public class Student2 {
 
 	private String name;
 	private String address;
 	private String phone;
 	private int age;
 	
-	Student(String name, String address, String phone, int age) {
+	Student2(String name, String address, String phone, int age) {
 		this.name = name;
 		this.address = address;
 		this.phone = phone;
