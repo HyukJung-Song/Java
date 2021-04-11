@@ -1,4 +1,4 @@
-package class_1;
+package _1_figure;
 import java.util.Scanner; //박영선 class
 
 public class Para extends Base {

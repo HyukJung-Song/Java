@@ -1,4 +1,4 @@
-package class_1;
+package _1_figure;
 public abstract class Base {
 	double area = 0;   
 	String name;         

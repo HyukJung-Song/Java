@@ -1,4 +1,4 @@
-package class_1;
+package _1_figure;
 import java.util.Scanner; //이혜진class
 //수치 입력 inputData
 //넓이 계산 calcArea

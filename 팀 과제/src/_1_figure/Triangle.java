@@ -1,4 +1,4 @@
-package class_1;
+package _1_figure;
 
 public class Triangle extends Base {
 

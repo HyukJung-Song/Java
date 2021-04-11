@@ -1,4 +1,4 @@
-package class_1;
+package _1_figure;
 public class Exec {
 	public static void main(String[] args) {
 		

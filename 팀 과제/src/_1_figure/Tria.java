@@ -1,4 +1,4 @@
-package class_1;
+package _1_figure;
 import java.util.Scanner; //배영현 class
 
 public class Tria extends Base {

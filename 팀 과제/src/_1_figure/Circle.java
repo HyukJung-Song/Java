@@ -1,4 +1,4 @@
-package class_1;
+package _1_figure;
 import java.util.Scanner; //이아림class
 
 public class Circle extends Base {
