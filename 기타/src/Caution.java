@@ -16,6 +16,9 @@ public class Caution {
 		System.out.println(Arrays.binarySearch(arr, 3));
 		System.out.println(str.indexOf("2"));
 		
+		// 자료형 검색
+		// 객체.getClass().getName()
+		
 		
 		
 

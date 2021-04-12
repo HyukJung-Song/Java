@@ -5,7 +5,7 @@ public class ExecClass {
 		
 		A a = new A();
 		
-		System.out.println(a.hp);
-		System.out.println(a.hp);
+		System.out.println(a);
+		System.out.println(a);
 	}
 }	
