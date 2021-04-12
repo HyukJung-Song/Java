@@ -1,110 +1,60 @@
+import java.util.Scanner;
 
 public class Student_Exec {
-
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
-		Stu[] stu = {new Stu("김1",10,100),
-						 new Stu("김2",20,80),
-						 new Stu("김3",30,30),
-						 new Stu("김4",40,90),
-						 new Stu("김5",50,40),
-						 new Stu("김6",60,63),
-						 new Stu("김7",70,72),
-						 new Stu("김8",80,81),
-						 new Stu("김9",90,59),
-						 new Stu("김10",100,100),
-		};			
+		// 1) 학생수 입력받아 Student 행렬 생성
+		System.out.println("학생의 성적을 성적순으로 나열합니다."); 
+		System.out.print("나열할 학생의 수를 입력해주세요 : ");
+		int num = Integer.parseInt(sc.nextLine());
 		
-		// Q1. 총점/평균 출력
-		// 총점
-
-		System.out.print("중간고사 총점: " + midSum);
-		System.out.print(" / 기말고사 총점: " + finalSum);
-		System.out.print(" / 총 총점: " + totalSum);
-		System.out.println();
+		// Student 리스트 생성 (null로 채워짐)
+		Student[] stuList = new Student[num];	// 이렇게만 만들면 null이 행렬에 3개 들어감
 		
-		// 평균
-
-		System.out.print("중간고사 평균: " + midAve);
-		System.out.print(" / 기말고사 평균: " + finalAve);
-		System.out.print(" / 총 평균: " + totalAve);
-		System.out.println("\n");
-		
-		
-		// Q2. 성적순으로 출력
-		// 1) 중간고사 성적순 (오름차순, 선택정렬)
-		for (int i=0; i<stu.length-1; i++) {
-			int minIdx = i;
-			for (int j=i+1; j<stu.length; j++) {
-				if (stu[minIdx].midScore > stu[j].midScore) {
-					minIdx = j;
-				}
-			}
-			swap(stu, i, minIdx);
+		// 리스트 내부에 객체 num개 생성 			 	// 그러면 값을 넣을 수가 없음(NullPointerException) 
+		for (int i=0; i<stuList.length; i++) {	// 그래서 new ()로 반복해서 생성해야함.
+			stuList[i] = new Student(); 
 		}
-		System.out.println("<중간고사 성적순>");
-		for (int i=0; i<stu.length; i++) {
-			System.out.println(stu[i]);
+		
+		// 출력 확인
+		for (int i=0; i<stuList.length; i++) {
+			System.out.println(stuList[i]);
 		}
 		System.out.println();
 		
-		// 2) 기말고사 성적순 (내림차순, 버블정렬)
-		for (int i=0; i<stu.length-1; i++) {
-			for (int j=1; j<stu.length-i; j++) {
-				if (stu[j-1].finalScore < stu[j].finalScore) {
-					swap(stu, j-1, j);
-				}
-			}
-		}
-		System.out.println("<기말고사 성적순>");
-		for (int i=0; i<stu.length; i++) {
-			System.out.println(stu[i]);
-		}
-		System.out.println("\n");
 		
-		
-		// 3) 총 성적순
-		// 중간과 기말의 합을 stu배열에 추가하기.
-//		for (int i=0; i<stu.length; i++) {
-//			int total = stu[i].midScore + stu[i].finalScore;
-//			stu[i].totalScore = total;
-//		}
-		
-		// 총 성적순으로 정렬 (삽입정렬)
-		for (int i=1; i<stu.length; i++) {
-			for (int j=i; j>0; j--) {
-				if (stu[j-1].totalScore > stu[j].totalScore) {
-					swap(stu, j-1, j);
-				}
-			}
-		}
-		System.out.println("<총 성적순>");
-		for (int i=0; i<stu.length; i++) {
-			System.out.println(stu[i]);
-		}
-	}
-	
-	public static void calc_sum_avg (Stu[] stu) {
-		
-		// 총점
-		int midSum = 0;
-		int finalSum = 0;
-		int totalSum = 0;
-		for (int i=0; i<stu.length; i++) {
-			midSum = midSum + stu[i].midScore;
-			finalSum = finalSum + stu[i].finalScore;
-			totalSum = totalSum + stu[i].totalScore;
+		// 2) 이름과 점수 입력받아 행렬에 넣기
+		for (int i=0; i<stuList.length; i++) {
+			stuList[i].stuNum = i+1;
+			System.out.println((i+1) + "번째 학생의 정보를 이름, 중간고사, 기말고사 성적순으로 입력해주세요.");
+			System.out.print("이름: ");
+			stuList[i].name = sc.nextLine();
+			System.out.println((i+1) + "번째_이름 : " + stuList[i].name);
+			System.out.print("중간고사 성적: ");
+			stuList[i].midterm = Integer.parseInt(sc.nextLine());
+			System.out.print((i+1) + "번째_중간 : " + stuList[i].midterm + "\n");
+			System.out.print("기말고사 성적: ");
+			stuList[i].finalterm = Integer.parseInt(sc.nextLine());
+			System.out.print((i+1) + "번째_기말 : " + stuList[i].finalterm + "\n");
+			System.out.println("==================\n");
 		}
 		
-		// 평균
-		double midAve = (double)midSum / stu.length;
-		double finalAve = (double)finalSum / stu.length;
-		double totalAve = (double)totalSum / stu.length;
-	}
-	
-	static void swap(Stu[] arr, int i, int j) {
-		Stu tmp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = tmp;
+		// 출력 확인
+		for (int i=0; i<stuList.length; i++) {
+			System.out.println(stuList[i]);
+		}
+		System.out.println();
+		
+		
+		Student s = new Student();
+		System.out.println(s);
+		
+		
+		
+		// for문안에 값 입력받아서 맨 끝에 생성자에 파라미터로 넣어서 만들기.
+		
+		
+		
 	}
 }
