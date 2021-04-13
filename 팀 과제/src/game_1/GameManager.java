@@ -1,6 +1,7 @@
 package game_1;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class GameManager {
 
@@ -66,6 +67,12 @@ public class GameManager {
 				System.out.println("적 승리");
 				break;
 			}
+			
+			// 턴 진행 엔터되게끔 설정!!
+			System.out.println("턴을 진행하시려면 엔터를 누르세요");
+			Scanner sc = new Scanner(System.in);
+			sc.nextLine();
+			
 			try {
 				Thread.sleep(3000);
 			} catch (InterruptedException e) {

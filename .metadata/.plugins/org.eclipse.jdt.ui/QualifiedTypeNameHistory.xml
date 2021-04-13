@@ -10,7 +10,6 @@
     <fullyQualifiedTypeName name="game_1.PlayerType1"/>
     <fullyQualifiedTypeName name="game_1.Archer"/>
     <fullyQualifiedTypeName name="game_1.Gunman"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.awt.List"/>
@@ -18,4 +17,5 @@
     <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
 </qualifiedTypeNameHistroy>

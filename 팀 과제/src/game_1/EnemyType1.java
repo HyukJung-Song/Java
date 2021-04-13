@@ -3,7 +3,7 @@ package game_1;
 public class EnemyType1 extends Enemy {
 	
 	public EnemyType1(String name) {
-		this.hp = 30;
+		this.hp = 10;
 		this.power = 5;
 		this.defense = 2;
 		this.name = name;
