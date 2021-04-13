@@ -3,10 +3,10 @@ package interface_1;
 public interface AClass {
 	
 
-	public void todoMethod1();
+	public void todoMethod1();	// abstract를 붙이지 않아도 붙인 것과 같게됨.
 	public void todoMethod2();
 	
-	public abstract void todoMethod3();  // 이렇게나 위에나 상관없이 구현한 클래스에서는 메소드를 다 구현해야함.
+	public abstract void todoMethod3();  
 	
 	
 	

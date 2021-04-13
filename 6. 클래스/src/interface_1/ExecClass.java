@@ -19,11 +19,7 @@ public class ExecClass implements AClass {
 //		
 //		System.out.println(ac);
 
-	@Override
-	public void todoMethod1() {
-		// TODO Auto-generated method stub
 
-	}
 
 	@Override
 	public void todoMethod2() {
@@ -35,5 +31,11 @@ public class ExecClass implements AClass {
 	public void todoMethod3() {
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	public void todoMethod1() {
+		// TODO Auto-generated method stub
+		
 	}
 }
