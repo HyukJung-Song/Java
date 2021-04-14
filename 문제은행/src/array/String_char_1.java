@@ -1,7 +1,8 @@
+package array;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class C {
+public class String_char_1 {
 
 	public static void main(String[] args) {
 		

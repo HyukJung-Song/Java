@@ -8,7 +8,8 @@ public class A {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// 20x20 배열 생성
+		// 20x20 배열 생성 (21x21)
+		// arr > map
 		int[][] arr = new int[20][20];
 
 		// 토끼 수 입력
@@ -43,7 +44,7 @@ public class A {
 					// 세로 토끼 잡음
 					} else if (j == fox_y) {
 						cnt++;
-					// 대각선 토끼 잡음(기울기 1/-1 이용)
+					// 대각선 토끼 잡음(기울기 1/-1 이용  Math.abs() 절대값. (i - fox_x) / (j - fox_y) 
 					} else if (((double) (i - fox_x) / (fox_y - j) == 1) || (double) (i - fox_x) / (fox_y - j) == -1) {
 						cnt++;
 					}

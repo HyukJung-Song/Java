@@ -9,7 +9,7 @@ class Solution {
 
 	public static void main(String args[]) throws Exception {
 		
-		System.setIn(new FileInputStream("src\\input.txt"));
+		System.setIn(new FileInputStream("src\\input.txt"));  //  \\input.txt는 안됨!!   \, /, 안됨. \\만 됨.
  
 		/*
 		 * 표준입력 System.in 으로부터 스캐너를 만들어 데이터를 읽어옵니다.
