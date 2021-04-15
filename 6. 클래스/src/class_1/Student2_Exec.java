@@ -1,4 +1,4 @@
-package class_;
+package class_1;
 import java.util.Arrays;
 
 public class Student2_Exec {
