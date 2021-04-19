@@ -35,11 +35,16 @@ public class Hanoi {
 	}
 	
 	public static void main(String[] args) {
-		long start = System.currentTimeMillis();
-		System.out.println();
-		hanoi(3, 'A', 'C', 'B');
-		long end = System.currentTimeMillis();
-		System.out.println("경과시간: " + (end - start) + "ms");
+		
+		hanoi(1, 'A', 'C', 'B');
+		
+		
+//		long start = System.currentTimeMillis();
+//		System.out.println();
+//		long end = System.currentTimeMillis();
+//		System.out.println("경과시간: " + (end - start) + "ms");
+	
+	
 	}
 	
 }
