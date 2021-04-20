@@ -2,6 +2,8 @@ package abstract_1;
 
 public class PlayerType1 extends Player {
 	
+	PlayerType1(){}
+	
 	public PlayerType1(String name) {
 		this.hp = 50;
 		this.power = 10;
@@ -18,13 +20,6 @@ public class PlayerType1 extends Player {
 							"에게 " + damage + "의 데미지를 입힘!");
 		if (!enemy.isLive()) {
 			System.out.println(enemy.name + " 사망!!");
-			
-			try {
-				Thread.sleep(2000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 		
 		
