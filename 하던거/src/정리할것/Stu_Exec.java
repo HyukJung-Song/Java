@@ -14,7 +14,7 @@ public class Stu_Exec {
 				new Stu("송2"),
 				new Stu("송3")
 		};
-				 
+				  
 		
 		// 중간, 기말점수 입력
 		Random r = new Random();
