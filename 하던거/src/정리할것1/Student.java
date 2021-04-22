@@ -1,3 +1,4 @@
+package 정리할것1;
 
 public class Student {
 	String name;
@@ -6,19 +7,9 @@ public class Student {
 	int totalScore;
 	double avgScore;
 	int rank;
-	
-	Student() {
-		
-	}
-	
+
 	Student(String name) {
 		this.name = name;
-	}
-	
-	Student(String name, int middleScore, int finalScore) {
-		this.name = name;
-		this.middleScore = middleScore;
-		this.finalScore = finalScore;
 	}
 	
 	public void sumScore() {

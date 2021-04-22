@@ -1,14 +1,15 @@
-package 정리할것;
+package 정리할것1;
 
-public class Stu {
+public class Stu2 {
 	
 	String name;
 	int mid;
 	int fin;
 	int sum;
 	double avg;
+	int rank;
 	
-	public Stu(String name) {
+	public Stu2(String name) {
 		this.name = name;
 	}
 	
