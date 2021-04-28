@@ -45,7 +45,10 @@ public class List_1 {
 		list2.add("a");
 		list2.add("b");
 		list2.add("c");
+		list2.add("b");
 		System.out.println(list2.remove("b")); // true
+		list2.removeAll(list2);
+//		System.out.println(list2.get(2));
 		System.out.println(list2.size());
 
 	}

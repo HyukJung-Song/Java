@@ -21,7 +21,7 @@ public class listex {
 		Iterator it = mylist.iterator(); // 실무유형1
 		while(it.hasNext()){ 
 		    int value = (int) it.next();
-		    System.out.println(value);                 
+		    System.out.print(value + " ");                 
 		}
 		for(Object i : mylist) {   // 실무유형2   
 			System.out.println(i);
