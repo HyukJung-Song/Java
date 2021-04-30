@@ -31,7 +31,7 @@ public class List_1 {
 		}
 		System.out.println();
 
-		
+		 
 		// contains
 		System.out.println(list1.contains(3)); // true
 		System.out.println(list1.contains(4)); // false
