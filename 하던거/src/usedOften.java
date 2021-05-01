@@ -6,23 +6,36 @@ public class usedOften {
 		
 		// 자주 실수하는거
 		System.out.println(1 + "1");			// 11
+		System.out.println();
+		
 		
 		// Math
 		System.out.println(Math.min(9, 1));		// 1
 		System.out.println(Math.pow(3, 3));		// 27.0(double임)
 		System.out.println(Math.round(2.456*100)/100.0);	// 2.46
+		System.out.println();
+		
 		
 		// String
-		String str = "12 서울";
-		String[] st1 = str.split(" ");
-		System.out.println(Arrays.toString(st1));
-		System.out.println(str.contains("서울"));
+		String str = "12 서울";		
+		// System.out.println(str[0]); (x)
+		System.out.println(str.charAt(4));			// 울
+		System.out.println(str.contains("서울"));	 	// true
+		System.out.println();
+
 		
-		// 인덱스 찾기
+		// arr <-> String
 		int[] arr = {1,2,3};
-		String str1 = "123";
-		System.out.println(Arrays.binarySearch(arr, 3));
-		System.out.println(str1.indexOf("2"));
+		String str1 = "1 2 3";
+		String[] strArr = str1.split(" ");	// [1, 2, 3]
+		System.out.println(Arrays.toString(strArr));	// [1, 2, 3]
+		// 길이구하기
+		System.out.println(arr.length);		// 3
+		System.out.println(str1.length());	// 5
+		// 인덱스 찾기
+		System.out.println(Arrays.binarySearch(arr, 3));	// 2
+		System.out.println(str1.indexOf("2"));				// 2
+		System.out.println();
 		
 		
 		// 실행시간 측정
@@ -30,6 +43,7 @@ public class usedOften {
 		// ... 로직 ...
 		long end = System.currentTimeMillis();
 		System.out.println("수행시간: " + (end - start) + " ms");
+		System.out.println();
 		
 		
 		// 잠시 정지시키기
@@ -39,6 +53,7 @@ public class usedOften {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 		
 		// 자료형 검색
 		// 객체.getClass().getName()
