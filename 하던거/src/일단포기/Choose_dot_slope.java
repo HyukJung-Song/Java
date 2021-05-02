@@ -1,4 +1,4 @@
-package array;
+package 일단포기;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,5 @@
-package 코딩실습;
+package professor;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;

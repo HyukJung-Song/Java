@@ -1,10 +1,26 @@
-package 코딩실습;
+package array;
 
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
-public class Mid2 {
+public class StrArr_intArr_1 {
+	
+/*
+5
+1 2 3 4 5 6 7 8 9 10
+7 5 2 1 2
+4 5 2
+2 6 4 8 10
+1 3 7 5 9
+
+>
+1 2 3 4 5 6 7 8 9 10
+1 2 2 5 7
+2 4 5
+2 4 6 8 10
+1 3 5 7 9
+ */
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

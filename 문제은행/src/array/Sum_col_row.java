@@ -1,9 +1,24 @@
-package 코딩실습;
+package array;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Mid3 {
+public class Sum_col_row {
+
+/*
+2 3
+2 4 8
+10 12 14
+3
+1 1 
+1 2 
+2 2
+
+>
+12 14
+16 14
+16 36
+ */
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

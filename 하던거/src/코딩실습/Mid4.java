@@ -8,37 +8,28 @@ public class Mid4 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		// 수열의 길이 (셋다 모두 1~1000)
-		int N = sc.nextInt();
-		// 더해지는 횟수
-		int M = sc.nextInt();
-		// 특정 숫자 더해지는 최대횟수 
-		int K = sc.nextInt(); 
+		int N = sc.nextInt();		// 5 (수열의 길이, 셋다 모두 1~1000)
+		int M = sc.nextInt();		// 5 (더해지는 횟수)
+		int K = sc.nextInt();		// 2 (특정 숫자 더해지는 최대횟수)
 		
-		
-		// 배열 생성한후 오름차순 정렬
 		int[] arr = new int[N];
-		for (int i=0; i<arr.length; i++) {
+		for (int i=0; i<N; i++) {
 			arr[i] = sc.nextInt();
 		}
-		Arrays.sort(arr);
+		Arrays.sort(arr);			// arr = [1, 2, 3, 4, 5] 
 		
-		// 가장 큰수로 더하기
 		int sum = 0;
-		int cnt = K;
-		for (int i=0; i<M; i++) {
-			if (cnt > 0) {
-				sum += arr[N-1];
+		int cnt = K;				// cnt = 2
+		for (int i=0; i<M; i++) {	// 5회 더해짐
+			if (cnt > 0) {  		// cnt = 2, 1
+				sum += arr[N-1];	// sum += 5
 				cnt--;
-			} else {
-				sum += arr[N-2];
-				cnt = K; 
+			} else {				
+				sum += arr[N-2];	// sum += 4
+				cnt = K;			// cnt = 2
 			}
 		}
-		
-		// 출력
 		System.out.println(sum);
-		
 		
 		
 	}

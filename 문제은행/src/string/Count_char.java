@@ -1,13 +1,23 @@
-package 코딩실습;
+package string;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Mid1 {
+public class Count_char {
 
-	public static void main(String[] args) throws FileNotFoundException {
+/*
+3
+*CDA
+**AA
+ABCD
+
+>
+1
+2
+1
+ */
+
+	public static void main(String[] args) {
 		// System.setIn(new FileInputStream("src\\mid1.txt"));
 		Scanner sc = new Scanner(System.in);
 		
@@ -24,7 +34,6 @@ public class Mid1 {
 			}
 			System.out.println(cntA);
 		}
-		
 		
 	}
 }
