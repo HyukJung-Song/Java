@@ -5,9 +5,16 @@ public class usedOften {
 
 	public static void main(String[] args) {				
 		
-		// 자주 실수하는거
+		// 자주 실수하거나 아리까리한거
+		System.out.println(0/2);				// 0
+		System.out.println(0%2);				// 0
 		System.out.println(1 + "1");			// 11
 		System.out.println();
+		
+		
+		// 알아두면 편한거
+		int a = (1 > 0)? 77:88;					// 77 (삼항연산자)
+		
 		
 		
 		// Math
