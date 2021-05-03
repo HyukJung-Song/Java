@@ -9,19 +9,19 @@ public class Mid5 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int stu = Integer.parseInt(br.readLine());	// 25 (1~999)
+		int stu = Integer.parseInt(br.readLine());	// 95 (1~999)
 		
 		// 350 / 45 = 7.7777 -> 8대
 		// 350 / 25 = 14 -> 15대
 
-		int bus45Max = (stu/45) + 1;		// 1
-		int bus25Max = (stu/25) + 1;		// 2
-		int bus45=0, bus25=0;
-		int minMoney = bus45Max * 45;		// 45
-		int sum;
-		for (int i=0; i<=bus45Max; i++) {		// 0,1
-			for (int j=0; j<=bus25Max; j++) {	// 0,1,2
-				sum = i*45 + j*25;
+		int bus45Max = (stu/45) + 1;		// 3
+		int bus25Max = (stu/25) + 1;		// 4
+		int bus45=0, bus25=0;				// 1 2
+		int minMoney = bus45Max * 45;		// 95
+		int sum; 								// stu = 95
+		for (int i=0; i<=bus45Max; i++) {		// 0,1,2,3
+			for (int j=0; j<=bus25Max; j++) {	// 0,1,2,3,4
+				sum = i*45 + j*25;	// 총 금액(총 수용인원)
 				if (sum >= stu && sum <= minMoney) {
 					minMoney = sum;
 					bus45 = i;
