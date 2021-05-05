@@ -3,8 +3,8 @@ package c0504_4;
 import java.util.Scanner;
 
 public class Employee {
-	String department;
 	String name;
+	String department;
 	String position;
 	String job;
 	

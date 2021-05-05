@@ -19,12 +19,14 @@ public class ExecClass {
 			System.out.println("원하시는 기능을 선택해주세요.");
 			System.out.println("1 : 인사 정보 입력");
 			System.out.println("2 : 인사 정보 출력");
+			System.out.println("3 : 인사 정보 수정");
 			System.out.println("quit : 종료");
 
 			String userInputString = sc.nextLine();
 			if (userInputString.equals("1")) {
 				Employee e = new Employee();
 				e.inputData();
+				// 번호로 받는게 더 낳을듯
 				if (e.department.contains("인사")) {
 					teams[0].staffs.add(e);
 				} else if (e.department.contains("개발")) {
@@ -42,10 +44,9 @@ public class ExecClass {
 						 System.out.println(teams[j].staffs.get(k));
 					 }
 				}
-				
 			}
 			else if (userInputString.equals("3")) {
-		
+				System.out.println();
 				
 			}
 			else if (userInputString.equals("quit")) {
