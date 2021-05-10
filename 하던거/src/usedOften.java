@@ -39,9 +39,15 @@ public class usedOften {
 		// String
 		String str = "12 서울";		
 		// System.out.println(str[0]); (x)
-		System.out.println(str.charAt(4));			// 울
-		System.out.println(str.contains("서울"));	 	// true
+		System.out.println(str.charAt(4));					// 울
+		System.out.println(str.contains("서울"));	 		// true
+		System.out.println(str.replaceAll("서울", "제천"));	// 12 제천 (str = str.replac~~ 로 해야 변경됨)
+		System.out.println(str);							// 12 서울 
 		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+
 		
 		
 		// String[]
