@@ -26,6 +26,14 @@ public class usedOften {
 		System.out.println();
 		
 		
+		// int <-> String
+		String s = "11";
+		int s1 = Integer.parseInt(s);
+		System.out.println(s1);
+		String s2 = Integer.toString(s1);
+		System.out.println(s2);
+		System.out.println();
+		
 		// char
 		char c1 = 'a';
 		System.out.println(c1);			// a
