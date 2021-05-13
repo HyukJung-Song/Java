@@ -34,6 +34,7 @@ public class usedOften {
 		System.out.println(s2);
 		System.out.println();
 		
+		
 		// char
 		char c1 = 'a';
 		System.out.println(c1);			// a
@@ -51,9 +52,13 @@ public class usedOften {
 		System.out.println(str.contains("서울"));	 		// true
 		System.out.println(str.replaceAll("서울", "제천"));	// 12 제천 (str = str.replac~~ 로 해야 변경됨)
 		System.out.println(str);							// 12 서울 
+		// String -> char[]
+		char[] charArr = str.toCharArray();
+		System.out.println(Arrays.toString(charArr));		// [1, 2,  , 서, 울]
 		System.out.println();
 		System.out.println();
-		System.out.println();
+
+		
 		
 
 		
