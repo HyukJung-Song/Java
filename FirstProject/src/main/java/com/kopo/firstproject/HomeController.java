@@ -32,8 +32,29 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
-		
+		model.addAttribute("a1", "하이!! a1");	// 문자열로만 매핑된다.
+
 		return "home";
+	}
+	
+	@RequestMapping(value = "/page", method = RequestMethod.GET)
+	public String page(Locale locale, Model model) {
+
+		return "p1";
+	}
+	
+	@RequestMapping(value = "/create", method = RequestMethod.GET)
+	public String create(Locale locale, Model model) {
+		DBCommon<Student> db = new DBCommon<Student>("c:/tomcat/s.db", "student");
+		db.createTable(new Student());
+		return "p1";	// view에 p1.jsp파일이 실행됨.
+	}
+	
+	@RequestMapping(value = "/insert", method = RequestMethod.GET)
+	public String insert(Locale locale, Model model) {
+		DBCommon<Student> db = new DBCommon<Student>("c:/tomcat/s.db", "student");
+		db.insertData(new Student("송혁중3", 100));
+		return "p2";
 	}
 	
 }
