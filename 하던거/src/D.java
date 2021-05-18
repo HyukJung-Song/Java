@@ -21,6 +21,9 @@ public class D {
 		
 		System.out.println(s);
 		
+		
+		int a = 105_2;
+		System.out.println(a);
 	}
 	
 	
