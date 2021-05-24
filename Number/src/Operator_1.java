@@ -1,5 +1,3 @@
-package number;
-
 public class Operator_1 {
 
 	public static void main(String[] args) {

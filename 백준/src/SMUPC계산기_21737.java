@@ -27,14 +27,14 @@ S: -,  M: *,  U: /,  P: +,  C: =
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		
-		int n = Integer.parseInt(br.readLine());
-		String target = br.readLine();
+		int n = Integer.parseInt(br.readLine());	// 4
+		String target = br.readLine();	
 		
 		tmpRes = tmp = calcNo = 0;
 		boolean chk = false;
 		// String res = "";
 		// 골때리는게 res로 하면 백준 통과가 안됨. String보다 StringBuilder가 훨씬 범위가 넒은듯!
-		for (int i=0; i<target.length(); i++) {
+		for (int i=0; i<target.length(); i++) { // 0328CS00325CC  // 328  // 3  (3*10 + 2)*10 
 			if (target.charAt(i) == 'S') {
 				calc();
 				calcNo = 1;
@@ -47,12 +47,12 @@ S: -,  M: *,  U: /,  P: +,  C: =
 			} else if (target.charAt(i) == 'P') {
 				calc();
 				calcNo = 0;
-			} else if (target.charAt(i) == 'C') {
+			} else if (target.charAt(i) == 'C') {	// tmp = 328
 				calc();
 				calcNo = 0;
 				if (!chk) {
-					sb.append(tmpRes);
-//					res += tmpRes;
+					sb.append(tmpRes);  // tmpRes : 328  
+//					res += tmpRes;		// tmp : 0
 				} else {
 					sb.append(" " + tmpRes);
 //					res += " " + tmpRes;
@@ -65,7 +65,7 @@ S: -,  M: *,  U: /,  P: +,  C: =
 		if (!chk) {
 			System.out.println("NO OUTPUT");
 		} else {
-			System.out.println(sb);
+			System.out.println(sb);		// 328 
 		}
 	}
 	
