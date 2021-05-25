@@ -1,5 +1,5 @@
 
-public class String_ {
+public class Basic {
 
 	public static void main(String[] args) {
 		
@@ -8,7 +8,6 @@ public class String_ {
 		str += 'a';
 		str += "bc";
 		System.out.println(str);	// abc
-		
 		
 		// .repeat
 		str = "abc".repeat(4);

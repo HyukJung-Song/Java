@@ -2,7 +2,7 @@
 
 import java.util.HashMap;
 
-public class basic {
+public class Basic {
 
 /*
  

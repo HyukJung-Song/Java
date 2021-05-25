@@ -1,8 +1,8 @@
-package for_each;
+
 
 import java.util.Arrays;
 
-public class Basic {
+public class For_each {
 
 	public static void main(String[] args) {
 		
