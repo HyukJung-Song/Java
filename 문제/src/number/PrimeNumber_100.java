@@ -26,8 +26,7 @@ public class PrimeNumber_100 {
 	}
 }
 
-/* # cnt
- 
+/*
 	for (int i = 1; i < 201; i++) {
 			int cnt = 0;
 			for (int j = 1; j < i + 1; j++) {

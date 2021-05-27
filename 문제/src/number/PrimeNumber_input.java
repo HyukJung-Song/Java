@@ -29,12 +29,6 @@ public class PrimeNumber_input {
 			}
 		}
 		
-		sc.close();
-		
-	
-
-		
-		
-		
+		sc.close();	
 	}
 }
