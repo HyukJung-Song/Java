@@ -1,4 +1,4 @@
-package string;
+package to_.exe;
 import java.util.Random;
 import java.util.Scanner;
 

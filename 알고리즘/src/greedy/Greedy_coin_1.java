@@ -1,4 +1,4 @@
-package 몫_나머지;
+package greedy;
 
 import java.util.*;
 
