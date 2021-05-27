@@ -1,7 +1,18 @@
-package number;
-import java.util.Scanner;
 
-public class PrimeNumber_100 {
+
+public class PrimeNum_print_위에꺼랑합치셈 {
+	
+	
+/*
+ * 5
+ * >
+ * 소수입니다.
+ * 2 3 5
+ * 
+ */
+	
+	
+	
 	public static void main(String[] args) {
 		
 		for (int i = 0; i < 101; i++) {
