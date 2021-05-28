@@ -1,9 +1,15 @@
-package array;
+package quiz;
 
 import java.util.Random;
 
 public class Sum_44 {
 	public static void main(String[] args) {
+/*
+   1   8   7  16
+   8   3   2  13
+   6   1   3  10
+  15  12  12  39
+*/
 		Random r = new Random(); 
 		
 		int[][] arr = new int[4][4];

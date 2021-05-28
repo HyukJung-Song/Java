@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class String_nextLine {
 	public static void main(String[] args) {
-		
-		
-		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("화면에 주사위를 굴릴까요? [Enter]");
 		sc.nextLine();		// 입력된 값을 문자로 만들어줌(그냥 Enter키도 먹음!!)

@@ -1,7 +1,5 @@
-package z_etc;
 
-import java.util.Arrays;
-import java.util.Random;
+
 import java.util.Scanner;
 
 public class next_nextInt_nextLine {
@@ -14,7 +12,7 @@ public class next_nextInt_nextLine {
 		
 		System.out.print("이름 입력: ");
 		String str = sc.next();
-		String tmp = sc.nextLine();		// [Enter] 처리 (미리 먹음)
+		sc.nextLine();				// [Enter] 처리 (미리 먹음)
 		
 		System.out.print("주소 입력: ");
 		String str2= sc.nextLine();
@@ -23,13 +21,8 @@ public class next_nextInt_nextLine {
 		System.out.println("이름: " + str);
 		System.out.println("주소: " + str2);
 		
-		// next()는 단어, nextInt()는 숫자. [Space]와 [Enter] 안먹음
-		// nextLine()은 문장. [Space]와 [Enter] 먹음
+		// next()는 단어, nextInt()는 숫자. 공백으로 구분됨. [Enter]는 안먹음
+		// nextLine()은 문장. [Enter] 먹음
 
-		
-
-	}
-	
-
-	
+	}	
 }
