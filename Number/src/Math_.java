@@ -3,6 +3,10 @@ public class Math_ {
 
 	public static void main(String[] args) {
 		
+		// 최대, 최소값
+		System.out.println(Math.max(4, 99.8));	// 99.8
+		
+		
 		// 반올림
 		double a = 2.628;
 		a = Math.round(a);	// 3.0
@@ -16,12 +20,7 @@ public class Math_ {
 		} else{
 			System.out.println("222");
 		}
-		
-		
-		// 최대, 최소값
-		System.out.println(Math.max(4, 99.8));	// 99.8
-		
-		
+
 		
 	}
 }

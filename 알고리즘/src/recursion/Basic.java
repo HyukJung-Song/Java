@@ -1,6 +1,6 @@
 package recursion;
 
-public class Recursive_function {
+public class Basic {
 
 	
 	public static void main(String[] args) {
