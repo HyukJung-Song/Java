@@ -13,6 +13,6 @@ public class BufferedReader_ {
 		int a = Integer.parseInt(strs[0]);
 		System.out.println(a);
 		
-		
+		 
 	}
 }
