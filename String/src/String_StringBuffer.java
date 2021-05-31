@@ -1,5 +1,6 @@
+import java.util.Scanner;
 
-public class C0430 {
+public class String_StringBuffer {
 
 	public static void main(String[] args) {
 		
@@ -18,12 +19,11 @@ public class C0430 {
 		
 		a = "hi";
 		System.out.println(a.hashCode());	// 3329
-		
 		a = "Hello";
 		System.out.println(a.hashCode());	// 69609650
-		
 		a = a + "1";
 		System.out.println(a.hashCode());	// -2137068097
+		
 		
 		
 		// StringBuffer 주소값에 대해
@@ -33,8 +33,19 @@ public class C0430 {
 		System.out.println(c);	// Hello1
 		System.out.println(c.hashCode());	// 1562557367
 		// 이런식으로 StringBuffer는 String에 비해 메모리를 효율적으로 쓸 수 있다.
-		
 		// c = "hii"; (x)
+			
+		// StringBuffer의 역순기능. (String에는 없다.)
+		Scanner sc = new Scanner(System.in);
+		StringBuffer sb = new StringBuffer(sc.nextLine());
+		sb.reverse();			// apple
+		System.out.println(sb);	// elppa
+		System.out.println(sb.getClass().getName());  // java.lang.StringBuffer
+		
+		// StringBuffer > String
+		String s = sb.toString();
+		// or String s = new String(sb)
+		System.out.println(s);
 		
 		
 	}

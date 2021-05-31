@@ -1,7 +1,13 @@
+import java.util.Arrays;
 
-public class Basic {
-
+public class Basic_String {
 	public static void main(String[] args) {
+
+		
+		// .charAt(idx)
+		String str = "12 서울";		
+		// System.out.println(str[0]); (x)
+		System.out.println(str.charAt(4));					// 울
 
 		
 		// .toCharArray()
@@ -11,8 +17,15 @@ public class Basic {
 		System.out.println();
 		
 		
+		// .contains(str), .replaceAll(str, newStr) 
+		if (s.contains("one")) {			// one 2 34
+			s = s.replaceAll("one", "1");	// 1 2 34
+		}
+		System.out.println();		
+		
+		
 		// .repeat(number)
-		String str = "abc".repeat(4);
+		str = "abc".repeat(4);
 		System.out.println(str);	// abcabcabcabc
 		
 		

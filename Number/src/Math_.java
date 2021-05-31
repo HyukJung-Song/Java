@@ -3,23 +3,15 @@ public class Math_ {
 
 	public static void main(String[] args) {
 		
-		// 최대, 최소값
+		// 자주사용
 		System.out.println(Math.max(4, 99.8));	// 99.8
-		
-		
-		// 반올림
-		double a = 2.628;
-		a = Math.round(a);	// 3.0
-		
-		// 소수점 2번째까지(3번째자리에서 반올림)
-		a = (double)Math.round(a * 100) / 100;	// 2.63
-		System.out.printf("%.2f", a);	// 2.63
-		if(a > 0) {
-			int b = 0;
-			System.out.println("11");
-		} else{
-			System.out.println("222");
-		}
+		System.out.println(Math.pow(3, 3));		// 27.0(double임)
+		System.out.println(Math.round(2.456));	// 2
+		System.out.println(Math.round(2.456*100)/100.0);	// 2.46 
+												// (혹은 printf("%.2f". double)로도 가능)
+		System.out.println(Math.ceil(2.1));		// 3.0 (2.0은 2.0임)
+		System.out.println(Math.floor(2.1));	// 2.0 (역시 2.0은 2.0임)
+		System.out.println();
 
 		
 	}

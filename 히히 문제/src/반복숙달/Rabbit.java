@@ -6,9 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Rabbit {
-
-	public static void main(String[] args) {
-		
+	
 /*
  * 각 테스트 케이스를 표준 입력에서 읽어옵니다.
  * 
@@ -17,6 +15,8 @@ public class Rabbit {
 	4 3 3 2 1 4 2 5 3 4 5
 	1 3 3 1 1
  */
+
+	public static void main(String[] args) {
 		
 		// System.setIn(new FileInputStream("src\\input.txt"));  //  \\input.txt는 안됨!!   \, /, 안됨. \\만 됨.
 		Scanner sc = new Scanner(System.in);
