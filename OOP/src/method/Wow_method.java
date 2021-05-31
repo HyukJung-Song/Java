@@ -1,14 +1,14 @@
-package 개깜놀;
+package method;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.function.Function;
 
-public class ArrayList_재귀함수 {
+public class Wow_method {
 	
 	public static void main(String[] args) {
 
 		test(2);	 // 이게 되다니...
-
 		
 		int num = 7;
 		test2(num);
@@ -31,7 +31,6 @@ public class ArrayList_재귀함수 {
 		test4(arr);
 		System.out.println(Arrays.toString(arr));		// [1, 2, 0]  wow....
 	}
-
 	
 	public static int test(int a) {
 		return a + 1;
