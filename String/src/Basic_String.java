@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Basic_String {
 	public static void main(String[] args) {
 
@@ -44,6 +42,12 @@ public class Basic_String {
 		s2 = "";
 		s2 += "11";
 		System.out.println(s2);		// 11
+		
+		
+		// 기타
+		s = "a";
+		System.out.println(s+2);	// a2
+		// System.out.println(s*2);  (x)
 
 	}
 }
