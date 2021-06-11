@@ -1,4 +1,6 @@
 import java.util.Arrays;
+import javax.swing.JOptionPane;
+
 
 public class C {
 	
@@ -15,6 +17,9 @@ public class C {
 		System.out.print(" ");
 		System.out.println(arr4);
 		System.out.println(arr3 + " ggss");
+		
+		JOptionPane.showMessageDialog(null, "기본 알림창입니다.");
+
 	}
 	
 }
