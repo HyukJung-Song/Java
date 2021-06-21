@@ -19,6 +19,10 @@ public class C {
 		System.out.println(arr3 + " ggss");
 		
 		JOptionPane.showMessageDialog(null, "기본 알림창입니다.");
+		
+		String str = "a";
+		str += "1" + "2";
+		System.out.println(str);
 
 	}
 	
